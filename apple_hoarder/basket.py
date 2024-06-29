@@ -1,7 +1,8 @@
 import pygame
 
+
 class Basket:
-    def __init__(self, screen, sprites: tuple[str]):
+    def __init__(self, screen, sprites: tuple[str, ...]):
         self._SCREEN = screen
         self._sprites = sprites
         self.rect = pygame.image.load(sprites[0]).get_rect()
